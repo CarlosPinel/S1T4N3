@@ -10,22 +10,18 @@ import org.junit.Test;
 
 public class Persona2Test {
 
-	/*
-	En este caso, al haber modificado el Equals y HasCode de la clase Persona2, los objetos seran
-	iguales en caso del mismo DNI.
-	*/
-	
+		
 		@Test
 		public void testEqual() {
 			Persona2 p1 = new Persona2("Pablo", "Ramirez", "12345678X");
-			Persona2 p2 = new Persona2("Pablo", "Ramirez", "12345678X");
-			assertThat(p1).isEqualTo(p2);
+			Persona2 p2 = p1;
+			assertThat(p1).isSameAs(p2);
 		}
 
 		@Test
 		public void testNotEqual() {
 			Persona2 p1 = new Persona2("Pablo", "Ramirez", "12345678X");
 			Persona2 p2 = new Persona2("Pablo", "Ramirez", "87654321P");
-			assertThat(p1).isNotEqualTo(p2);
+			assertThat(p1).isNotSameAs(p2);
 		}
 	}

@@ -5,9 +5,9 @@ package N301;
 public class Persona1 {
     
 	//Attributes
-	String nombre;
-	String apellidos;
-	String dNI;
+	private String nombre;
+	private String apellidos;
+	private String dNI;
 
 	//constructor
 	public Persona1(String nombre, String apellidos, String dNI) {

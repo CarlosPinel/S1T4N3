@@ -7,9 +7,9 @@ import java.util.Objects;
 public class Persona2 {
     
 	//Attributes
-	String nombre;
-	String apellidos;
-	String dNI;
+	private String nombre;
+	private String apellidos;
+	private String dNI;
 
 	//constructor
 	public Persona2(String nombre, String apellidos, String dNI) {

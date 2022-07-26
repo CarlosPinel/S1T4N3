@@ -2,8 +2,8 @@ package N304;
 
 public class Coche {
 
-	String nombre;
-	int potencia;
+	private String nombre;
+	private int potencia;
 	
 	public Coche(String nombre, int potencia) {
 		super();
